@@ -8,34 +8,35 @@ class StrUtils {
     }
 
     public function bold($str) {
-        echo "<strong>".$this->getStr($str)."</strong>";
+        echo "<strong>".$this->getStr($str)."</strong>" ."<br>";
     }
     public function ital($str) {
-        echo "<I>".$this->getStr($str)."</I>";
+        echo "<i>".$this->getStr($str)."</i>" ."<br>";
     }
     public function underline($str) {
-        echo "<u>".$this->getStr($str)."</u>";
+        echo "<u>".$this->getStr($str)."</u>" ."<br>";
     }
     public function caps($str) {
-        echo "<p style='text-transform: capitalize'>".$this->getStr($str)."</p>";
+        echo "<cap style='text-transform: capitalize'>".$this->getStr($str)."</cap>" ."<br>";
     }
     public function uglify($str) {
-        echo "<strong><u><I>".$this->getStr($str)."</I></u></strong>";
+        echo "<strong><i><u>".$this->getStr($str)."</u></i></strong>" ."<br>";
+    }
+    public function uppercase($str) {
+        echo "<p style='text-transform: uppercase'>" . $this->getStr($str) . "</p>" ."<br>";
     }
 
     /**
      * @return mixed
      */
-    public function getStr()
-    {
+    public function getStr() {
         return $this->str;
     }
 
     /**
      * @param mixed $str
      */
-    public function setStr($str): void
-    {
+    public function setStr($str): void {
         $this->str = $str;
     }
 
